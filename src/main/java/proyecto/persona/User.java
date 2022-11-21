@@ -1,12 +1,33 @@
 package proyecto.persona;
 
-public class User {
+/**
+ * @author EvaCárdenasBermudez
+ *
+ */
+
+class User {
+	protected String name;
 	protected String email;
 	protected String password;
+	protected Long idBasket;
+
+	/**
+	 * 
+	 */
 	
-	public User(){
+	public User() {
+		this.name = name;
 		this.email = email;
 		this.password = password;
+		this.idBasket = idBasket;
+	}
+
+	public String getNombre() {
+		return name;
+	}
+
+	public void setNombre(String nombre) {
+		this.name = nombre;
 	}
 
 	public String getEmail() {
@@ -24,4 +45,13 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public Long getIdCesta() {
+		return idBasket;
+	}
+
+	public void setIdCesta(Long idCesta) {
+		this.idBasket = idCesta;
+	}
+	
 }
